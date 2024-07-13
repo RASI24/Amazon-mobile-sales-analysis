@@ -5,7 +5,7 @@ import openpyxl
 from openpyxl import load_workbook
 import os
 
-#this function is used to check the file is the current data is already present or not 
+#this function is used to check the file and the current data is already present or not 
 def append_to_excel(filename, data):
     if os.path.exists(filename):
         workbook = load_workbook(filename)
